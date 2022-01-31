@@ -1,6 +1,3 @@
-[submodule "webgl-flocking"]
-	path = webgl-flocking
-	url = https://github.com/mcomstock/webgl-flocking
 [submodule "brine-shrimp"]
 	path = brine-shrimp
 	url = https://git.sr.ht/~mcomstock/brine-shrimp
