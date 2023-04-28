@@ -4,3 +4,6 @@
 [submodule "brine-shrimp"]
 	path = brine-shrimp
 	url = https://git.sr.ht/~mcomstock/brine-shrimp
+[submodule "webgl-particle-swarm"]
+	path = webgl-particle-swarm
+	url = https://github.com/mcomstock/webgl-particle-swarm
