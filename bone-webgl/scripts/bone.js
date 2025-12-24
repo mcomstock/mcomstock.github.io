@@ -68,6 +68,7 @@ class BoneSim {
         num_clasts: 20,
         u_min: 0.0,
         u_max: 1.0,
+        normalized_display_threshold: 0.5,
       },
       textures: {
         tex_to_sim_map: this.gl_helper.loadUintTexture(tex_nx, tex_ny, null),
@@ -260,6 +261,7 @@ class BoneSim {
         ['u_max', '1f', (state) => state.uniforms.u_max],
         ['tex_width_exp', '1i', (state) => state.uniforms.tex_width_exp],
         ['cell_size', 'vec3', (state) => [1.0 / state.uniforms.sim_nx, 1.0 / state.uniforms.sim_ny, 1.0 / state.uniforms.sim_nz]],
+        ['normalized_display_threshold', '1f', (state) => state.uniforms.normalized_display_threshold],
       ],
       this.display_canvas,
     );

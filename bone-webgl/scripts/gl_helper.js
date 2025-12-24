@@ -391,20 +391,12 @@ class GlHelper {
       set_uniforms(state, gl);
 
       gl.enable(gl.DEPTH_TEST);
-      // gl.depthFunc(gl.LEQUAL);
+      gl.depthFunc(gl.LEQUAL);
       gl.enable(gl.CULL_FACE);
-      // gl.cullFace(gl.BACK);
-      gl.enable(gl.BLEND);
 
-      // gl.blendFunc(gl.ONE, gl.ZERO);
       gl.clearColor(1.0, 1.0, 1.0, 1.0);
       gl.clearDepth(1.0);
       gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
-
-      // TODO The transparency doesn't really work
-      // - Why: https://stackoverflow.com/questions/42130719/how-to-set-transparency-properly-in-webgl
-      // - Possible solutions: https://www.alecjacobson.com/weblog/2750.html
-      gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 
       gl_helper.useDisplayVertexBuffer(program);
 
